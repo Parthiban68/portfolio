@@ -9,6 +9,7 @@ import {
   mongodb,
   git,
   threejs,
+  docker,
 } from "../assets";
 
 // export const navLinks = [
@@ -49,42 +50,51 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    color: '#ff6d00'
   },
   {
     name: "CSS 3",
     icon: css,
+    color: '#039be5'
   },
   {
     name: "JavaScript",
     icon: javascript,
+    color: '#ffd600'
   },
   {
     name: "React JS",
     icon: reactjs,
+    color: '#53c1de'
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    color: '#00b4d2'
   },
   {
     name: "Node JS",
     icon: nodejs,
+    color: '#21a366'
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    color:"#4caf50"
   },
   {
     name: "Three JS",
     icon: threejs,
+    color:"#0a0808"
   },
   {
     name: "git",
     icon: git,
+    color:"#f4511e"
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Docker",
+    icon: docker,
   },
   {
     name: "React JS",

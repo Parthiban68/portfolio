@@ -1,9 +1,7 @@
 import React from 'react'
 function ContactUs() {
   return (
-    <div className="home">
-      Contact Us
-    </div>
+       <div>Contact us</div>
   );
 }
 
