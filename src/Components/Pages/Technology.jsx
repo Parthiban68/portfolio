@@ -4,11 +4,10 @@ import { useEffect, useState } from 'react';
 import { technologies } from "../../constants"
 
 const Technology = () => {
-  // const [visibleItems, setVisibleItems] = useState([]);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 pb-20 md:pb-4 bg-zinc-950">
-    <h1 className="text-2xl md:text-3xl font-bold text-center mb-8">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 pb-20 md:pb-4 bg-gradient-to-r from-custom-medium-blue  via-custom-light-blue to-custom-light-cyan ">
+    <h1 className="text-2xl md:text-3xl text-center mb-8 text-black font-mono">
       Powering your Web Application Withframeworks and tools
     </h1>
     <div className="flex flex-row flex-wrap justify-center gap-10 w-full max-w-[80%] mx-auto ">

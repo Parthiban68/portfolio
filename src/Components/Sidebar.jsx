@@ -9,8 +9,8 @@ import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="z-[100] fixed md:top-1/2 md:left-0 bottom-0 left-0 md:w-16 w-full h-auto md:h-[340px] bg-gray-500/30 md:rounded-t-xl md:rounded-b-xl md:ml-5 flex md:flex-col flex-row justify-center items-center md:items-center md:justify-center p-2 md:-translate-y-1/2">
-    <div className="flex md:flex-col flex-row items-center md:items-start space-x-0 md:space-x-0 space-x-2 md:space-y-4 md:p-0 p-1">
+    <div className="z-[100] fixed md:top-1/2 md:left-0 bottom-0 left-0 md:w-16 w-full h-auto md:h-[340px] bg-gray-900 md:rounded-t-xl md:rounded-b-xl md:ml-5 flex md:flex-col flex-row justify-center items-center md:items-center md:justify-center p-2 md:-translate-y-1/2">
+    <div className="flex md:flex-col flex-row items-center md:items-start  md:space-x-0 space-x-2 md:space-y-4 md:p-0 p-1">
       <ul className="flex md:flex-col flex-row items-center md:space-y-4 space-x-4 md:space-x-0">
         <li className="relative group">
           <NavLink
