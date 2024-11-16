@@ -4,7 +4,7 @@ import { technologies } from '../../constants';
 
 const Technology = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 pb-20 md:pb-4 bg-gradient-to-r from-purple-300 via-purple-00 to-blue-200">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 pb-20 md:pb-4 bg-gradient-to-b from-purple-300 to-indigo-500">
       <h1 className="text-2xl md:text-3xl text-center mb-8 text-black font-mono">
         Powering your Web Application With Frameworks and Tools
       </h1>
