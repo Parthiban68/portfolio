@@ -40,8 +40,7 @@ function ContactUs() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
           variants={containerVariant}
         >
-
-          <motion.div variants={itemVariant}>
+          <motion.div variants={itemVariant} className="">
             <h2 className="text-xl font-semibold text-gray-700 mb-4">
               Subscribe
             </h2>
@@ -73,7 +72,6 @@ function ContactUs() {
             </div>
           </motion.div>
 
-    
           <motion.div variants={itemVariant}>
             <h2 className="text-xl font-semibold text-white mb-4">
               Please Fill The Required Details!

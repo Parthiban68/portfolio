@@ -4,8 +4,9 @@ import { technologies } from '../../constants';
 
 const Technology = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 pb-20 md:pb-4 bg-gradient-to-b from-purple-300 to-indigo-500">
-      <h1 className="text-2xl md:text-3xl text-center mb-8 text-black font-mono">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 pb-20 md:pb-4 bg-gradient-to-b from-black via-gray-800 to-black relative">
+      <div class="absolute inset-0 bg-gradient-to-t from-white/10 via-white/10 to-transparent opacity-50 pointer-events-none"></div>
+      <h1 className="text-2xl md:text-3xl text-center mb-8 text-white font-mono">
         Powering your Web Application With Frameworks and Tools
       </h1>
       <div className="flex flex-row flex-wrap justify-center gap-10 w-full max-w-[80%] mx-auto">
@@ -30,7 +31,7 @@ const Technology = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{
               duration: 0.6,
-              delay: index * 0.2, // add delay for staggered animation
+              delay: index * 0.2,
               ease: 'easeOut',
             }}
           >
