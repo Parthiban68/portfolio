@@ -7,11 +7,11 @@ const aboutSections = [
     title: "💻 What I Do",
     content: (
       <ul className="list-disc list-inside text-gray-800 space-y-2 font-mono">
-        <li className="text-base">
-          <strong className="text-black">Web Development</strong>: Skilled in creating responsive, engaging web applications using the latest technologies in the MERN stack (MongoDB, Express.js, React.js, Node.js). I focus on clean, efficient code and seamless user experiences.
+        <li className="text-base text-custom-white">
+          <strong className="text-white">Web Development</strong>: Skilled in creating responsive, engaging web applications using the latest technologies in the MERN stack (MongoDB, Express.js, React.js, Node.js). I focus on clean, efficient code and seamless user experiences.
         </li>
-        <li className="text-base">
-          <strong className="text-black">Mobile Development</strong>: Proficient in building mobile applications using Flutter, delivering smooth, native-like experiences across iOS and Android platforms.
+        <li className="text-base text-custom-white">
+          <strong className="text-custom-white">Mobile Development</strong>: Proficient in building mobile applications using Flutter, delivering smooth, native-like experiences across iOS and Android platforms.
         </li>
       </ul>
     ),
@@ -20,7 +20,7 @@ const aboutSections = [
     id: 2,
     title: "🚀 Why I Code",
     content: (
-      <p className="text-base text-gray-800 font-mono">
+      <p className="text-base text-custom-white font-mono">
         I believe in the power of technology to transform everyday life, and I’m driven to solve real-world problems through innovative software solutions. Whether it's a sleek website or an intuitive mobile app, I strive to make technology more accessible and enjoyable for everyone.
       </p>
     ),
@@ -29,7 +29,7 @@ const aboutSections = [
     id: 3,
     title: "🌱 Always Learning",
     content: (
-      <p className="text-base text-gray-800 font-mono">
+      <p className="text-base text-custom-white font-mono">
         Technology is ever-evolving, and so am I. I constantly explore new frameworks, tools, and best practices to stay at the forefront of the field, ensuring that I’m bringing the latest and greatest to my projects.
       </p>
     ),
@@ -54,10 +54,10 @@ const AboutUs = () => {
   return (
     <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-start py-10 relative">
       
-      <div className="w-80 h-80 bg-cricleone absolute md:top-0 md:left-5 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-      <div className="w-80 h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
       <motion.h2
-        className="text-4xl font-extrabold text-black mb-10 font-mono text-center"
+        className="text-4xl font-extrabold text-custom-white mb-10 font-mono text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -74,14 +74,14 @@ const AboutUs = () => {
         {aboutSections.map((section) => (
           <motion.div
             key={section.id}
-            className="p-6 bg-gradient-to-r from-purple-300 via-purple-100 to-blue-200 bg-opacity-80 rounded-xl drop-shadow-lg border"
+            className="p-6 bg-transparent rounded-xl shadow-2xl border z-10"
             variants={cardVariants}
             whileHover={{ scale: 1.10 }}
             initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
           >
-            <h3 className="text-2xl font-semibold text-black mb-4 font-mono">
+            <h3 className="text-2xl font-semibold text-custom-white mb-4 font-mono">
               {section.title}
             </h3>
             {section.content}
