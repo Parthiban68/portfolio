@@ -1,43 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-const certificates = [
-  {
-    id: 1,
-    title: "Docker and Kubernetes Fundamentals",
-    details: "Scaler Masterclass Certification",
-    img: "/assets/certificates/certificate1.jpg",
-  },
-  {
-    id: 2,
-    title: "Kafka and Zookeeper Masterclass",
-    details: "In-depth understanding of Kafka",
-    img: "/assets/certificates/certificate2.jpg",
-  },
-  {
-    id: 3,
-    title: "MERN Stack Development",
-    details: "KGisl Micro College Certificate",
-    img: "/assets/certificates/certificate3.jpg",
-  },
-  {
-    id: 4,
-    title: "React and Node.js Development",
-    details: "Advanced MERN Stack Skills",
-    img: "/assets/certificates/certificate4.jpg",
-  },
-];
+import { certificates } from "../../constants";
 
 const Certificate = () => {
   const cardAnimation = {
-    hidden: { opacity: 0, y: 50 }, // Cards start faded and below their position
-    visible: { opacity: 1, y: 0 }, // Cards fade in and slide up
-    hover: { scale: 1.05 }, // Enlarge slightly on hover
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 }, 
+    hover: { scale: 1.05 },
   };
 
   const headingAnimation = {
-    hidden: { opacity: 0, y: -50 }, // Heading starts above and faded
-    visible: { opacity: 1, y: 0 }, // Heading slides down and fades in
+    hidden: { opacity: 0, y: -50 }, 
+    visible: { opacity: 1, y: 0 }, 
   };
 
   return (

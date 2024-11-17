@@ -1,33 +1,8 @@
 // ProjectPage.js
 import React from 'react';
 import { motion } from 'framer-motion';
+import { projects } from '../../constants';
 
-const projects = [
-  {
-    id: 1,
-    title: 'Hostel Management',
-    description: 'An advanced software solution to streamline hostel administration, managing student accommodations, payments, and maintenance requests.',
-    image: 'https://via.placeholder.com/300x200',
-  },
-  {
-    id: 2,
-    title: 'Certificate Locker',
-    description: 'A secure and centralized platform for storing and managing digital certificates with encryption and authentication.',
-    image: 'https://via.placeholder.com/300x200', 
-  },
-  {
-    id: 3,
-    title: 'Hostel Management',
-    description: 'An advanced software solution to streamline hostel administration, managing student accommodations, payments, and maintenance requests.',
-    image: 'https://via.placeholder.com/300x200', 
-  },
-  {
-    id: 4,
-    title: 'Certificate Locker',
-    description: 'A secure and centralized platform for storing and managing digital certificates with encryption and authentication.',
-    image: 'https://via.placeholder.com/300x200', 
-  },
-];
 
 const ProjectCard = ({ title, description, image, custom }) => {
   return (

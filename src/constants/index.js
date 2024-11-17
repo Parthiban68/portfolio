@@ -12,40 +12,6 @@ import {
   docker,
 } from "../assets";
 
-// export const navLinks = [
-//   {
-//     id: "about",
-//     title: "About",
-//   },
-//   {
-//     id: "work",
-//     title: "Work",
-//   },
-//   {
-//     id: "contact",
-//     title: "Contact",
-//   },
-// ];
-
-// const services = [
-//   {
-//     title: "FullStack Developer",
-//     icon: web,
-//   },
-//   {
-//     title: "Front-End Developer",
-//     icon: mobile,
-//   },
-//   {
-//     title: "Backend Developer",
-//     icon: backend,
-//   },
-//   {
-//     title: "MERN Developer",
-//     icon: creator,
-//   },
-// ];
-
 const technologies = [
   {
     name: "HTML 5",
@@ -122,117 +88,58 @@ const technologies = [
   },
 ];
 
-// const experiences = [
-//   {
-//     title: "React js",
-//     icon: reactjs,
-//     iconBg: "#383E56",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Node js",
-//     icon: nodejs,
-//     iconBg: "#E6DEDD",
-//     points: [
-//       "Developing and maintaining backend services using Node.js and related frameworks such as Express.js.",
-//       "Collaborating with front-end developers, database administrators, and other team members to deliver efficient and scalable backend solutions.",
-//       "Implementing secure and efficient RESTful APIs, ensuring proper data handling and authentication mechanisms.",
-//       "Participating in code reviews, optimizing server performance, and troubleshooting production issues in a collaborative environment.",
-//     ],
-//   },
-//   {
-//     title: "Mongo DB",
-//     icon: mongodb,
-//     iconBg: "#383E56",
-//     points: [
-//       "Designing and managing NoSQL databases using MongoDB, ensuring efficient data modeling and storage solutions.",
-//       "Collaborating with developers and data engineers to integrate MongoDB with backend services, optimizing queries for performance and scalability.",
-//       "Implementing data validation, indexing, and aggregation pipelines in MongoDB to support complex application requirements.",
-//       "Monitoring and maintaining MongoDB instances, performing backups, and ensuring high availability and disaster recovery strategies.",
-//     ],
-//   },
-//   {
-//     title: "Tailwind CSS",
-//     icon: tailwind,
-//     iconBg: "#E6DEDD",
-//     points: [
-//       "Designing and developing responsive user interfaces using Tailwind CSS, ensuring a consistent and scalable design system.",
-//       "Collaborating with UI/UX designers to translate design prototypes into high-quality, pixel-perfect layouts using Tailwind CSS.",
-//       "Optimizing Tailwind CSS utility classes to create modular and reusable components, enhancing development speed and maintainability.",
-//       "Implementing dark mode, custom themes, and responsive designs with Tailwind CSS, ensuring cross-browser and cross-device compatibility.",
-//     ],
-//   },
-// ];
+const certificates = [
+  {
+    id: 1,
+    title: "Docker and Kubernetes Fundamentals",
+    details: "Scaler Masterclass Certification",
+    img: "/assets/certificates/certificate1.jpg",
+  },
+  {
+    id: 2,
+    title: "Kafka and Zookeeper Masterclass",
+    details: "In-depth understanding of Kafka",
+    img: "/assets/certificates/certificate2.jpg",
+  },
+  {
+    id: 3,
+    title: "MERN Stack Development",
+    details: "KGisl Micro College Certificate",
+    img: "/assets/certificates/certificate3.jpg",
+  },
+  {
+    id: 4,
+    title: "React and Node.js Development",
+    details: "Advanced MERN Stack Skills",
+    img: "/assets/certificates/certificate4.jpg",
+  },
+];
 
-// const projects = [
-//   {
-//     name: "Chat Application UI",
-//     description:
-//       "Engineered a fully responsive and dynamic chat application UI using HTML, CSS, and JavaScript. Focused on delivering a clean, intuitive design to optimize user experience and engagement.",
-//     tags: [
-//       {
-//         name: "react",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "mongodb",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "tailwind",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: carrent,
-//     source_code_link: "https://github.com/Parthiban68/Social-Media_-UI-.git",
-//   },
-//   {
-//     name: "Restaurant UI",
-//     description:
-//      "Created a modern, responsive restaurant UI using React and Tailwind CSS, featuring a visually appealing layout with smooth navigation and interactive menu displays. Focused on a clean, minimalistic design to enhance the restaurant's branding and deliver a seamless user experience.",
-//     tags: [
-//       {
-//         name: "react",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "restapi",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "css",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: jobit,
-//     source_code_link: "https://github.com/Parthiban68/Food.git",
-//   },
-//   // {
-//   //   name: "Trip Guide",
-//   //   description:
-//   //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-//   //   tags: [
-//   //     {
-//   //       name: "nextjs",
-//   //       color: "blue-text-gradient",
-//   //     },
-//   //     {
-//   //       name: "supabase",
-//   //       color: "green-text-gradient",
-//   //     },
-//   //     {
-//   //       name: "css",
-//   //       color: "pink-text-gradient",
-//   //     },
-//   //   ],
-//   //   image: tripguide,
-//   //   source_code_link: "https://github.com/",
-//   // },
-// ];
+const projects = [
+  {
+    id: 1,
+    title: 'Hostel Management',
+    description: 'An advanced software solution to streamline hostel administration, managing student accommodations, payments, and maintenance requests.',
+    image: 'https://via.placeholder.com/300x200',
+  },
+  {
+    id: 2,
+    title: 'Certificate Locker',
+    description: 'A secure and centralized platform for storing and managing digital certificates with encryption and authentication.',
+    image: 'https://via.placeholder.com/300x200', 
+  },
+  {
+    id: 3,
+    title: 'Hostel Management',
+    description: 'An advanced software solution to streamline hostel administration, managing student accommodations, payments, and maintenance requests.',
+    image: 'https://via.placeholder.com/300x200', 
+  },
+  {
+    id: 4,
+    title: 'Certificate Locker',
+    description: 'A secure and centralized platform for storing and managing digital certificates with encryption and authentication.',
+    image: 'https://via.placeholder.com/300x200', 
+  },
+];
 
-export { technologies};
+export { technologies, certificates, projects};
