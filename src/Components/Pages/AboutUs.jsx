@@ -52,8 +52,10 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-custom-white flex flex-col items-center justify-start py-10">
- 
+    <div className="w-full min-h-screen bg-primary flex flex-col items-center justify-start py-10 relative">
+      
+      <div className="w-80 h-80 bg-cricleone absolute md:top-0 md:left-5 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+      <div className="w-80 h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
       <motion.h2
         className="text-4xl font-extrabold text-black mb-10 font-mono text-center"
         initial={{ opacity: 0, y: -50 }}

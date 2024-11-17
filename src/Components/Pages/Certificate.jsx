@@ -41,8 +41,7 @@ const Certificate = () => {
   };
 
   return (
-    <div className="h-full w-full bg-gradient-to-b from-purple-800 to-orange-400 flex flex-col items-center justify-center p-10">
-      {/* Animated Heading */}
+    <div className="w-full flex items-center justify-center h-full bg-gradient-to-b from-purple-800 to-orange-400 flex-col p-8">
       <motion.h2
         className="text-4xl font-extrabold text-white mb-10"
         variants={headingAnimation}
@@ -62,7 +61,7 @@ const Certificate = () => {
         {certificates.map((cert) => (
           <motion.div
             key={cert.id}
-            className="w-full p-6 bg-white shadow-lg rounded-lg overflow-hidden"
+            className="p-6 bg-white shadow-lg rounded-lg overflow-hidden"
             variants={cardAnimation}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}

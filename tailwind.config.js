@@ -18,6 +18,9 @@ export default {
         customYellow: 'hsla(38, 60%, 74%, 1)',
         customIndigo: 'hsla(222, 67%, 73%, 1)',
         customPink: 'hsla(343, 68%, 79%, 1)',
+        "primary":"#01051e",
+        "cricleone":"#A427DF",
+        "cricletwo":"#ff7d3b"
       },
     },
   },
