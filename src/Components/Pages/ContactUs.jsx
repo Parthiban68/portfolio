@@ -22,7 +22,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-purple-800 to-orange-400 flex items-center justify-center p-6">
+    <div className="min-h-screen w-full  bg-primary relative flex items-center justify-center p-6">\
+    <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+    <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
       <motion.div
         className="w-5/6 bg-transparent rounded-lg shadow-2xl p-8 border"
         variants={containerVariant}
@@ -30,7 +32,7 @@ function ContactUs() {
         animate="visible"
       >
         <motion.h1
-          className="text-2xl font-bold text-center text-white mb-6"
+          className="ext-4xl font-extrabold text-white text-center mb-6"
           variants={itemVariant}
         >
           Contact Us!
@@ -40,7 +42,7 @@ function ContactUs() {
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
           variants={containerVariant}
         >
-          <motion.div variants={itemVariant} className="">
+          <motion.div variants={itemVariant} className="z-10">
             <h2 className="text-xl font-semibold text-gray-700 mb-4">
               Subscribe
             </h2>
@@ -72,7 +74,7 @@ function ContactUs() {
             </div>
           </motion.div>
 
-          <motion.div variants={itemVariant}>
+          <motion.div variants={itemVariant} className="z-10">
             <h2 className="text-xl font-semibold text-white mb-4">
               Please Fill The Required Details!
             </h2>
