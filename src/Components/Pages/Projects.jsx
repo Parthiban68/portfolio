@@ -52,7 +52,7 @@ const Projects = () => {
       </motion.h1>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-5/6"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-6/6 md:w-5/6 "
         initial="hidden"
         animate="visible"
         variants={{

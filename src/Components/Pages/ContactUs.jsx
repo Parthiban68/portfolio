@@ -26,7 +26,7 @@ function ContactUs() {
     <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
     <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
       <motion.div
-        className="w-5/6 bg-transparent rounded-lg shadow-2xl p-8 border"
+        className="w-6/6 md:w-5/6 bg-transparent rounded-lg shadow-2xl p-8 border"
         variants={containerVariant}
         initial="hidden"
         animate="visible"

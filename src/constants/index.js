@@ -10,6 +10,13 @@ import {
   git,
   threejs,
   docker,
+  spring,
+  mysql,
+  java,
+  flutter,
+  expressjs,
+  dart,
+  bootstrap,
 } from "../assets";
 
 const technologies = [
@@ -63,28 +70,32 @@ const technologies = [
     icon: docker,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "spring",
+    icon: spring,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Mysql",
+    icon: mysql,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "java",
+    icon: java,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "flutter",
+    icon: flutter,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Express JS",
+    icon: expressjs,
   },
   {
-    name: "git",
-    icon: git,
+    name: "dart",
+    icon: dart,
+  },
+  {
+    name: "Botstrap",
+    icon: bootstrap,
   },
 ];
 
