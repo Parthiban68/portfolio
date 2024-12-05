@@ -1,4 +1,5 @@
 
+import { color } from "framer-motion";
 import {
   javascript,
   html,
@@ -68,34 +69,42 @@ const technologies = [
   {
     name: "Docker",
     icon: docker,
+    color:"#01579b"
   },
   {
     name: "spring",
     icon: spring,
+    color:"#8bc34a"
   },
   {
     name: "Mysql",
     icon: mysql,
+    color:"#056d61"
   },
   {
     name: "java",
     icon: java,
+    color:"#381fd2"
   },
   {
     name: "flutter",
     icon: flutter,
+    color:"#01579b"
   },
   {
     name: "Express JS",
     icon: expressjs,
+    color:"#575d61"
   },
   {
     name: "dart",
     icon: dart,
+    color:"#42a5f5"
   },
   {
     name: "Botstrap",
     icon: bootstrap,
+    color:"#42a5f5"
   },
 ];
 

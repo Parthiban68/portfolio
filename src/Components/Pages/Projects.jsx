@@ -23,8 +23,8 @@ const ProjectCard = ({ title, description, image, custom }) => {
       </div>
      
       <div className="p-6">
-        <h3 className="text-lg text-custom-white font-extrabold mb-2">{title}</h3>
-        <p className="text-gray-200 mb-4 text-base font-mono">{description}</p>
+        <h3 className="text-xl text-custom-white font-heading mb-2">{title}</h3>
+        <p className="text-gray-200 mb-4 text-base font-body">{description}</p>
         <motion.button
           className="text-base font-mono px-4 py-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 focus:outline-none"
           whileHover={{ scale: 1.05 }} 

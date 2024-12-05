@@ -1,3 +1,5 @@
+import { body } from 'framer-motion/client';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -20,7 +22,13 @@ export default {
         customPink: 'hsla(343, 68%, 79%, 1)',
         "primary":"#01051e",
         "cricleone":"#A427DF",
-        "cricletwo":"#ff7d3b"
+        "cricletwo":"#ff7d3b",
+        "bgdark":"#151515"
+      },
+      fontFamily:{
+        heading:['Bangers'],
+        body:['Poppins'],
+        secbody:['Satisfy', 'cursive']
       },
     },
   },

@@ -90,7 +90,7 @@ const AboutUs = () => {
       <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
       <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
       <motion.h2
-        className="text-4xl font-extrabold text-custom-white mb-10 text-center"
+        className="text-4xl font-heading text-custom-white mb-10 text-center"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -114,7 +114,7 @@ const AboutUs = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
           >
-            <h3 className="text-2xl font-semibold text-custom-white mb-4 font-mono">
+            <h3 className="text-2xl text-custom-white mb-4 font-heading">
               {section.title}
             </h3>
             {section.content}
