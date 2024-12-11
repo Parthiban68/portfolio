@@ -22,9 +22,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen w-full  bg-primary relative flex items-center justify-center p-6">\
-    <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-    <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+    <div className="min-h-screen w-full bg-primary relative flex items-center justify-center p-6">
+      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
       <motion.div
         className="w-6/6 md:w-5/6 bg-transparent rounded-lg shadow-2xl p-8 border"
         variants={containerVariant}
@@ -43,39 +43,25 @@ function ContactUs() {
           variants={containerVariant}
         >
           <motion.div variants={itemVariant} className="z-10">
-            <h2 className="text-xl font-semibold text-gray-700 mb-4">
-              Subscribe
-            </h2>
-            <form className="mb-6">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full p-3 border rounded-lg mb-3 focus:outline-none focus:ring-2 focus:ring-purple-600 placeholder:text-xl"
-              />
-              <button
-                type="submit"
-                className="w-full bg-transparent border text-white py-3 rounded-lg hover:bg-purple-700 text-xl"
-              >
-                Subscribe
-              </button>
-            </form>
-
-            <h2 className="text-xl font-semibold text-gray-700 mb-4">
-              Our Location
-            </h2>
-            <div className="mb-6">
-              <iframe
-                title="Google Maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019137934115!2d-122.419415!3d37.774929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064cb992b89%3A0x1dcb15a4123d4e93!2sCanada!5e0!3m2!1sen!2sus!4v1633542552472"
-                className="w-full h-48 border rounded-lg"
-                allowFullScreen
-                loading="lazy"
-              ></iframe>
+            <div className="grid grid-rows-[auto,1fr] gap-4 h-full">
+              <h2 className="text-xl font-semibold text-gray-300 mb-4">
+                Our Location
+              </h2>
+              <div className="h-full">
+                <iframe
+                 title="Google Maps"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d581.6056716023618!2d76.97200501107393!3d10.928202594639833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1733837357064!5m2!1sen!2sin"
+                  className="w-full h-full border rounded-lg"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </motion.div>
 
           <motion.div variants={itemVariant} className="z-10">
-            <h2 className="text-xl font-semibold text-white mb-4">
+            <h2 className="text-xl font-semibold text-gray-300 mb-4">
               Please Fill The Required Details!
             </h2>
             <form className="space-y-4">
