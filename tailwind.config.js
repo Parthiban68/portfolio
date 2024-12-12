@@ -27,8 +27,9 @@ export default {
       },
       fontFamily:{
         heading:['Bangers'],
-        body:['Poppins'],
-        secbody:['Satisfy', 'cursive']
+        bodys:['Poppins'],
+        secbody:['Satisfy'],
+        head:['Bruno Ace SC']
       },
     },
   },
