@@ -22,9 +22,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-primary relative flex items-center justify-center p-6">
-      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+    <div className="min-h-screen w-full bg-black relative flex items-center justify-center p-6">
+        <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+        <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
       <motion.div
         className="w-6/6 md:w-5/6 bg-transparent rounded-lg shadow-2xl p-8 border"
         variants={containerVariant}
@@ -32,7 +32,7 @@ function ContactUs() {
         animate="visible"
       >
         <motion.h1
-          className="ext-4xl font-extrabold text-white text-center mb-6"
+          className="ext-4xl font-extrabold text-white text-center mb-6 z-10 font-head"
           variants={itemVariant}
         >
           Contact Us!
@@ -44,6 +44,8 @@ function ContactUs() {
         >
           <motion.div variants={itemVariant} className="z-10">
             <div className="grid grid-rows-[auto,1fr] gap-4 h-full">
+              <h1>Let's Talk</h1>
+              <p>I'm open to discussing web development projects or partnership opportunities.</p>
               <h2 className="text-xl font-semibold text-gray-300 mb-4">
                 Our Location
               </h2>
@@ -51,7 +53,7 @@ function ContactUs() {
                 <iframe
                  title="Google Maps"
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d581.6056716023618!2d76.97200501107393!3d10.928202594639833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1733837357064!5m2!1sen!2sin"
-                  className="w-full h-full border rounded-lg"
+                  className="w-full h-52 border rounded-lg"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"

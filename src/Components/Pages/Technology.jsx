@@ -5,15 +5,15 @@ import { technologies } from '../../constants';
 const Technology = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen p-4 pb-20 md:pb-4 bg-black relative">
-      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-20 overflow-hidden rounded-full"></div>
-      <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-20 overflow-hidden rounded-full"></div>
+      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
       <motion.h2
-        className="text-4xl text-custom-white mb-10 font-heading text-center"
+        className="text-4xl text-custom-white mb-10 font-head text-center z-10"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-         Powering your Web Application With Frameworks and Tools
+         Powering your Web Application <br />With Frameworks and Tools
       </motion.h2>
       <div className="flex flex-row flex-wrap justify-center gap-10 w-full max-w-[80%] mx-auto">
         {technologies.map((framework, index) => (

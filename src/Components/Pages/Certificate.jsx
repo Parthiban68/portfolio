@@ -15,11 +15,11 @@ const Certificate = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-center min-h-screen bg-primary relative flex-col p-8">
-       <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-       <div className="w-60 sm:w-80 h-60 sm:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+    <div className="w-full flex items-center justify-center min-h-screen bg-black relative flex-col p-8">
+        <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+        <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
       <motion.h2
-        className="text-4xl font-extrabold text-white mb-10"
+        className="text-4xl font-extrabold font-head text-white mb-10 z-10"
         variants={headingAnimation}
         initial="hidden"
         animate="visible"
@@ -48,8 +48,8 @@ const Certificate = () => {
               className="w-full h-40 object-cover text-custom-white rounded-md"
             />
             <div className="mt-4">
-              <h3 className="text-xl font-bold text-custom-white">{cert.title}</h3>
-              <p className="mt-2 text-sm text-gray-200 font-mono">{cert.details}</p>
+              <h3 className="text-xl font-semibold text-custom-white ">{cert.title}</h3>
+              <p className="mt-2 text-sm text-gray-200 font-bodys">{cert.details}</p>
             </div>
           </motion.div>
         ))}
