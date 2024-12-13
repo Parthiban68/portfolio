@@ -29,10 +29,10 @@ function Home() {
       <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
       <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
       <div className="w-full flex items-center justify-between px-5 mr-10">
-        <div className="text-3xl sm:text-6xl font-bold p-2 rounded-lg hover:bg-yellow-500 font-head">PB</div>
+        <div className="text-3xl sm:text-6xl font-bold p-2 rounded-lg font-head">PB</div>
         <div className="flex items-center">
           <button className="md:text-xl text-base p-2 rounded-lg font-head">
-            Resume   
+            <a href="https://drive.google.com/file/d/1O1_3xYvJXbUR6ey_BqLlzXL0uZ_7R2bE/view?usp=sharing"> Resume</a>      
           </button>
           <div className="flex items-start justify-start mb-20">
               {[1, 2, 3].map((index) => (

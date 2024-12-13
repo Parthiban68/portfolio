@@ -29,7 +29,7 @@ const Certificate = () => {
       </motion.h2>
 
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-6 w-5/6 z-10"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-5/6 z-10"
         initial="hidden"
         animate="visible"
         variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
@@ -37,7 +37,7 @@ const Certificate = () => {
         {certificates.map((cert) => (
           <motion.div
             key={cert.id}
-            className="p-6 bg-transparent border shadow-2xl rounded-lg overflow-hidden"
+            className="p-2 bg-transparent border shadow-2xl rounded-lg overflow-hidden items-center"
             variants={cardAnimation}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
@@ -45,9 +45,9 @@ const Certificate = () => {
             <img
               src={cert.img}
               alt={cert.title}
-              className="w-full h-40 object-cover text-custom-white rounded-md"
+              className="w-full h-52 object-cover text-custom-white rounded-md"
             />
-            <div className="mt-4">
+            <div className="mt-4 p-5">
               <h3 className="text-xl font-semibold text-custom-white ">{cert.title}</h3>
               <p className="mt-2 text-sm text-gray-200 font-bodys">{cert.details}</p>
             </div>

@@ -15,6 +15,7 @@ import flutter from "./tech/flutter.png";
 import java from "./tech/java.png";
 import mysql from "./tech/mysql.png";
 import spring from "./tech/spring.png";
+import Doc from "./certificate/Docker.png"
 
 export {
   spring,
@@ -34,4 +35,5 @@ export {
   reactjs,
   tailwind,
   threejs,
+  Doc
 };

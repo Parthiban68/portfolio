@@ -18,6 +18,7 @@ import {
   expressjs,
   dart,
   bootstrap,
+  Doc
 } from "../assets";
 
 const technologies = [
@@ -113,7 +114,7 @@ const certificates = [
     id: 1,
     title: "Docker and Kubernetes Fundamentals",
     details: "Scaler Masterclass Certification",
-    img: "/assets/certificates/certificate1.jpg",
+    img: Doc,
   },
   {
     id: 2,
