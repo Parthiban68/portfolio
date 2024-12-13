@@ -59,7 +59,7 @@ const technologies = [
   {
     name: "Three JS",
     icon: threejs,
-    color:"#0a0808"
+    color:"#575d61"
   },
   {
     name: "git",

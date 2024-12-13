@@ -44,8 +44,11 @@ function ContactUs() {
         >
           <motion.div variants={itemVariant} className="z-10">
             <div className="grid grid-rows-[auto,1fr] gap-4 h-full">
-              <h1>Let's Talk</h1>
-              <p>I'm open to discussing web development projects or partnership opportunities.</p>
+              <h1 className="text-2xl text-gray-300">Let's Talk</h1>
+              <p className="text-lg text-white">I'm open to discussing web development projects or partnership opportunities.</p>
+              <p className="text-lg text-white"><i class="fa-regular fa-envelope"></i> parthibanm1268@gmail.com</p>
+              <p className="text-lg text-white"><i class="fa-solid fa-phone"></i> +91 8754131978</p>
+              <p className="text-lg text-white"><i class="fa-solid fa-location-dot"></i> Coimbatore,Tamil Nadu,India</p>
               <h2 className="text-xl font-semibold text-gray-300 mb-4">
                 Our Location
               </h2>
