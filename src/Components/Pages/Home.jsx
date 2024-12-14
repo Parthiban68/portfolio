@@ -83,7 +83,7 @@ function Home() {
             elegant products that speak out their functionalities.
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mt-4 md:mt-12">
-            <button className="bg-yellow-500 text-lg sm:text-xl text-gray-900 font-semibold py-3 px-6 rounded hover:bg-yellow-600 font-head">
+            <button className="bg-yellow-500 text-lg sm:text-xl text-black font-semibold py-3 px-6 rounded hover:bg-yellow-600 font-head">
               Chat with Me
             </button>
           </div>

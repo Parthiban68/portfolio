@@ -23,7 +23,8 @@ export default {
         "primary":"#01051e",
         "cricleone":"#A427DF",
         "cricletwo":"#ff7d3b",
-        "bgdark":"#151515"
+        "bgdark":"#151515",
+        "sibg":"#f1fbff",
       },
       fontFamily:{
         heading:['Bangers'],
