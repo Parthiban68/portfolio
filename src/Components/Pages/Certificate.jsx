@@ -5,19 +5,19 @@ import { certificates } from "../../constants";
 const Certificate = () => {
   const cardAnimation = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 }, 
+    visible: { opacity: 1, y: 0 },
     hover: { scale: 1.05 },
   };
 
   const headingAnimation = {
-    hidden: { opacity: 0, y: -50 }, 
-    visible: { opacity: 1, y: 0 }, 
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
     <div className="w-full flex items-center justify-center min-h-screen bg-black relative flex-col p-8">
-        <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-        <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
+      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
       <motion.h2
         className="text-4xl font-extrabold font-head text-white mb-10 z-10"
         variants={headingAnimation}
@@ -28,7 +28,7 @@ const Certificate = () => {
         Certifications
       </motion.h2>
 
-      <motion.div
+      {/* <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-5/6 z-10"
         initial="hidden"
         animate="visible"
@@ -53,7 +53,46 @@ const Certificate = () => {
             </div>
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-6 w-5/6 z-10">
+        <div class="bg-transparent rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="https://via.placeholder.com/500x300"
+            alt="Certification Image 1"
+            class="w-full md:w-full h-full md:h-auto object-cover"
+          />
+        </div>
+        <div class="p-6 flex flex-col justify-center">
+          <h2 class="text-xl font-bold text-gray-200 mb-2">
+            Original & sustainable
+          </h2>
+          <p class="text-gray-200 text-lg">
+            Each product we offer is as unique as the artist who made it. Our
+            entire collection is crafted using locally sourced, non-toxic
+            materials including repurposed wood and recycled glass. That way we
+            create with the environment in mind.
+          </p>
+        </div>
+
+        <div class="p-6 flex flex-col justify-center mt-5">
+          <h2 class="text-xl font-bold text-gray-200 mb-2">
+            Original & sustainable
+          </h2>
+          <p class="text-gray-200 text-lg">
+            Each product we offer is as unique as the artist who made it. Our
+            entire collection is crafted using locally sourced, non-toxic
+            materials including repurposed wood and recycled glass. That way we
+            create with the environment in mind.
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row bg-transparent rounded-xl overflow-hidden shadow-lg mt-5">
+          <img
+            src="https://via.placeholder.com/500x300"
+            alt="Certification Image 1"
+            class="w-full md:w-full h-full md:h-auto object-cover"
+          />
+        </div>
+      </div>
     </div>
   );
 };
