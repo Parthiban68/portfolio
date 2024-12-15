@@ -120,19 +120,19 @@ const certificates = [
     id: 2,
     title: "Kafka and Zookeeper Masterclass",
     details: "In-depth understanding of Kafka",
-    img: "/assets/certificates/certificate2.jpg",
+    img: "https://via.placeholder.com/500x300",
   },
   {
     id: 3,
     title: "MERN Stack Development",
     details: "KGisl Micro College Certificate",
-    img: "/assets/certificates/certificate3.jpg",
+    img: "https://via.placeholder.com/500x300",
   },
   {
     id: 4,
     title: "React and Node.js Development",
     details: "Advanced MERN Stack Skills",
-    img: "/assets/certificates/certificate4.jpg",
+    img: "https://via.placeholder.com/500x300",
   },
 ];
 
@@ -142,24 +142,32 @@ const projects = [
     title: 'Hostel Management',
     description: 'An advanced software solution to streamline hostel administration, managing student accommodations, payments, and maintenance requests.',
     image: 'https://via.placeholder.com/300x200',
+    alignment: "left",
+    category: "Web/Design",
   },
   {
     id: 2,
     title: 'Certificate Locker',
     description: 'A secure and centralized platform for storing and managing digital certificates with encryption and authentication.',
     image: 'https://via.placeholder.com/300x200', 
+    alignment: "right",
+    category: "Web/Design",
   },
   {
     id: 3,
     title: 'Hostel Management',
     description: 'An advanced software solution to streamline hostel administration, managing student accommodations, payments, and maintenance requests.',
     image: 'https://via.placeholder.com/300x200', 
+    alignment: "left",
+    category: "Web/Design",
   },
   {
     id: 4,
     title: 'Certificate Locker',
     description: 'A secure and centralized platform for storing and managing digital certificates with encryption and authentication.',
     image: 'https://via.placeholder.com/300x200', 
+    alignment: "right",
+    category: "Web/Design",
   },
 ];
 
