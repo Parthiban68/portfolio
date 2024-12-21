@@ -86,11 +86,9 @@ const AboutUs = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-black flex flex-col items-center justify-start py-2 relative text-white">
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
+    <>
       <motion.h2
-        className="text-4xl font-head font-[600] text-custom-white mb-10 text-center z-10"
+        className="text-4xl font-head font-[600] text-custom-white mb-10 text-center z-10 "
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -99,7 +97,7 @@ const AboutUs = () => {
       </motion.h2>
 
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 w-5/6"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 w-5/6 min-h-screen"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -121,7 +119,7 @@ const AboutUs = () => {
           </motion.div>
         ))}
       </motion.div>
-    </div>
+      </>
   );
 };
 

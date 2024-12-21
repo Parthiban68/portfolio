@@ -22,10 +22,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen w-full bg-black relative flex items-center justify-center p-6">
+    <>
       {/* Background Circles */}
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
+    
 
       {/* Main Contact Section */}
       <motion.div
@@ -121,7 +120,7 @@ function ContactUs() {
           </div>
         </div>
       </motion.div>
-    </div>
+    </>
   );
 }
 

@@ -16,11 +16,7 @@ const Certificate = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-center min-h-screen bg-black relative flex-col p-4 sm:p-8">
-  {/* Background Blurred Circles */}
-  <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 rounded-full"></div>
-  <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 rounded-full"></div>
-
+    <>
   {/* Heading */}
   <motion.h2
     className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-head text-white mb-8 sm:mb-10 z-10 text-center"
@@ -65,7 +61,7 @@ const Certificate = () => {
       </div>
     ))}
   </motion.div>
-</div>
+</>
 
   );
 };

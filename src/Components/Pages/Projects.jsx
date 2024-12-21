@@ -5,9 +5,8 @@ import { projects } from "../../constants";
 
 const Projects = () => {
   return (
-    <div className="w-full flex items-center justify-center min-h-screen bg-black relative flex-col p-8">
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
+    <>
+     
       <motion.h1
         className="ext-4xl font-extrabold font-head text-white mb-8 z-10"
         initial={{ opacity: 0, y: -50 }}
@@ -62,7 +61,7 @@ const Projects = () => {
           </div>
         ))}
       </motion.div>
-    </div>
+    </>
   );
 };
 

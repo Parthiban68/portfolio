@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { useTheme } from "../ThemeContext/themeApi";
+
+
 function Home() {
+
+  const {themeChanged, darkTheme} = useTheme();
+
   const base = 0.5;
-  const [darkTheme, setDarkTheme] = useState(false);
   
-const themeChanged = () =>{
-  setDarkTheme(!darkTheme);
-}
   const chevronStyles = (delay) => ({
     position: "absolute",
     width: `${base * 3.0}rem`,
@@ -29,14 +30,14 @@ const themeChanged = () =>{
   });
 
   return (
-    <div className={`w-full min-h-screen ${darkTheme ? 'bg-white' : 'bg-black'} flex flex-col items-center justify-start py-2 relative text-white`}>
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-      <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
+   <>
       <div className="w-full flex items-center justify-between px-5 mr-10">
         <div className="text-3xl sm:text-6xl font-bold p-2 rounded-lg font-head">PB</div>
         <div className="flex items-center">
-         <button className="text-white text-base border rounded-lg" onClick={themeChanged}>Dark</button>
-
+         <button className="p-2"
+        onClick={themeChanged} >
+        {darkTheme ? <i class="fa-regular fa-sun text-black text-3xl"></i> : <i class="fa-regular fa-moon text-3xl"></i>}
+      </button>
           <button className="md:text-xl text-base p-2 rounded-lg font-head">
             <a href="https://drive.google.com/file/d/1O1_3xYvJXbUR6ey_BqLlzXL0uZ_7R2bE/view?usp=sharing"> Resume</a>      
           </button>
@@ -84,7 +85,7 @@ const themeChanged = () =>{
           <h1 className="text-3xl sm:text-5xl md:text-[2.98rem] mb-6 text-yellow-300 font-head font-[400]">
             Parthi Ban is Right Here!
           </h1>
-          <p className="text-base sm:text-base text-gray-100 mt-0 md:mt-10 font-bodys font-[200]">
+          <p className={`text-base sm:text-base ${darkTheme ? 'text-black' : 'text-white'} mt-0 md:mt-10 font-bodys font-[200]`}>
             With a seasoned eye for design, I like to transform ideas into
             elegant products that speak out their functionalities.
           </p>
@@ -149,7 +150,7 @@ const themeChanged = () =>{
           </div>
         </div>
       </div>
-    </div>
+      </>
   );
 }
 
