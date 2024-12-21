@@ -6,6 +6,7 @@ import projects from "../assets/project.png";
 import certificate from "../assets/certificate.png";
 import technology from "../assets/technology.png";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Sidebar() {
 
@@ -26,6 +27,7 @@ function Sidebar() {
     // Cleanup listener on unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
 
   return isMobile ? (
     // Mobile Bottom Bar
