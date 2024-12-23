@@ -12,7 +12,8 @@ export default {
         'custom-light-cyan': '#91EAE4',
         'custom-light-blue': '#86A8E7',
         'custom-medium-blue': '#7F7FD5',
-        'custom-white':'#FFFAFA',
+        'custom-white':'#f2f2f2',
+        'cutom-white-two':'#f5ebfa',
         customBlue: 'hsla(215, 98%, 61%, 1)',
         customGreen: 'hsla(125, 98%, 72%, 1)',
         customRed: 'hsla(354, 98%, 61%, 1)',
@@ -21,6 +22,7 @@ export default {
         customIndigo: 'hsla(222, 67%, 73%, 1)',
         customPink: 'hsla(343, 68%, 79%, 1)',
         "primary":"#01051e",
+        "anotherprimary":"#272c39",
         "cricleone":"#A427DF",
         "cricletwo":"#ff7d3b",
         "bgdark":"#151515",
@@ -29,7 +31,10 @@ export default {
         "lightcard":"#f2eae2",
         "heading":"#30756a",
         "body":"#90a9a2",
-        "head":"#126458"
+        "head":"#126458",
+        "headings":"#025a4e",
+        "heading-two":"0a7273",
+        
       },
       fontFamily:{
         heading:['Bangers'],
