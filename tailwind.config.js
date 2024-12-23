@@ -25,6 +25,11 @@ export default {
         "cricletwo":"#ff7d3b",
         "bgdark":"#151515",
         "sibg":"#f1fbff",
+        "lightmode":"#ede7de",
+        "lightcard":"#f2eae2",
+        "heading":"#30756a",
+        "body":"#90a9a2",
+        "head":"#126458"
       },
       fontFamily:{
         heading:['Bangers'],
