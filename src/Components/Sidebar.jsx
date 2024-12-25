@@ -53,7 +53,7 @@ function Sidebar() {
     </div>
   ) : (
     // Desktop Sidebar
-   <div className="z-[100] fixed md:bottom-0 md:right-0 bottom-0 right-0 md:w-16 w-full h-auto md:h-16 md:rounded-full md:mr-5 flex md:flex-col flex-row justify-center items-center md:items-center md:justify-center p-2 group transition-all ">
+   <div className="z-[100] fixed md:bottom-0 md:-right-3 bottom-0 right-0 md:w-16 w-full h-auto md:h-16 md:rounded-full md:mr-5 flex md:flex-col flex-row justify-center items-center md:items-center md:justify-center p-2 group transition-all ">
       <div className="absolute md:bottom-0 mb-4 md:left-0 bg-gray-100 md:group-hover:h-[330px] md:group-hover:rounded-ful md:group-hover:rounded-full md:w-16 h-16 rounded-full transition-all "></div>
 
       <ul

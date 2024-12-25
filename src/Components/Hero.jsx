@@ -8,15 +8,28 @@ import Technology from "./Pages/Technology";
 import ContactUs from "./Pages/ContactUs";
 import { useTheme } from "./ThemeContext/themeApi";
 
-
 function Hero() {
-  const {darkTheme} = useTheme();
+  const { darkTheme } = useTheme();
   return (
-    <div className={`w-full min-h-screen ${darkTheme ? 'bg-white' : 'bg-black'} flex flex-col items-center justify-start py-2 relative text-white`}>
-      {darkTheme ? <div></div> : <div> <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
-        <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div></div>}
+    <div
+      className={`w-full min-h-screen ${
+        darkTheme ? "bg-gradient-to-l from-[#D7E1EC] to-[#FFFFFF]" : "bg-black"
+      } flex flex-col items-center justify-start py-2 relative text-white`}
+    >
+      {darkTheme ? (
+        <div>
+          <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleon absolute top-10 left-10 blur-3xl opacity-40 overflow-hidden rounded-full"></div>
+          <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletw absolute bottom-10 right-0 blur-3xl opacity-40 overflow-hidden rounded-full"></div>
+        </div>
+      ) : (
+        <div>
+          {" "}
+          <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricleone absolute top-10 left-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+          <div className="w-40 sm:w-60 md:w-80 h-40 sm:h-60 md:h-80 bg-cricletwo absolute bottom-10 right-0 blur-2xl opacity-40 overflow-hidden rounded-full"></div>
+        </div>
+      )}
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/certificate" element={<Certificate />} />

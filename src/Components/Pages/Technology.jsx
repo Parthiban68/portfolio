@@ -1,19 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { technologies } from '../../constants';
-
+import { useTheme } from "../ThemeContext/themeApi";
 const Technology = () => {
+  const {darkTheme} = useTheme();
   return (
     <>
       <motion.h2
-        className="text-4xl text-custom-white mb-10 font-head text-center z-10"
+        className={`text-4xl ${darkTheme ? 'text-headings' : 'text-custom-white'} mb-10 font-head text-center z-10 mt-10`}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
          Powering your Web Application <br />With Frameworks and Tools
       </motion.h2>
-      <div className="flex flex-row flex-wrap justify-center gap-10 w-full max-w-[80%] mx-auto">
+      <div className="flex flex-row flex-wrap justify-center gap-10 w-full max-w-[80%] mx-auto mb-20">
         {technologies.map((framework, index) => (
           <motion.div
             key={index}

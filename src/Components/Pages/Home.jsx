@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTheme } from "../ThemeContext/themeApi";
+import { color } from "framer-motion";
 
 
 function Home() {
@@ -23,7 +24,8 @@ function Home() {
     top: 0,
     height: "70%",
     width: "50%",
-    background: darkTheme ? "#000000":"#ffffff",
+    background: darkTheme ?  "linear-gradient(135deg, #e0e0e0, #434343)" 
+    : "linear-gradient(135deg, #ffffff, #e0e0e0)",
     transform: isBefore ? "skewY(30deg)" : "skewY(-30deg)",
     left: isBefore ? 0 : "auto",
     right: isBefore ? "auto" : 0,
@@ -34,10 +36,50 @@ function Home() {
       <div className="w-full flex items-center justify-between px-5 mr-10">
         <div className={`text-3xl sm:text-4xl font-[200] p-2 rounded-lg font-head ${darkTheme ? "text-anotherprimary":"text-white "}`}>PB</div>
         <div className="flex items-center">
-         <button className="p-2"
-        onClick={themeChanged} >
-        {darkTheme ? <i class="fa-regular fa-sun text-black text-3xl"></i> : <i class="fa-regular fa-moon text-3xl"></i>}
-      </button>
+      <div
+        className={`flex items-center w-16 h-8 rounded-full cursor-pointer transition-colors ${
+          darkTheme ? "bg-gray-800" : "bg-gray-300"
+        }`}
+        onClick={themeChanged}
+      >
+        <div
+          className={`flex items-center justify-center w-8 h-8 rounded-full transition-transform ${
+            darkTheme ? "bg-black translate-x-8" : "bg-white translate-x-0"
+          }`}
+        >
+          {darkTheme ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="white"
+              className="w-6 h-6 "
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21 12.79A9 9 0 1111.21 3a7.5 7.5 0 109.79 9.79z"
+              />
+            </svg>
+          ):(
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="black"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364l-1.414 1.414M7.05 16.95l-1.414 1.414M16.95 16.95l1.414 1.414M7.05 7.05L5.636 5.636"
+              />
+            </svg>
+          )  }
+        </div>
+      </div>
           <button className={`md:text-xl text-base p-2 rounded-lg font-head ${darkTheme ? "text-anotherprimary":"text-white "}`}>
             <a href="https://drive.google.com/file/d/1O1_3xYvJXbUR6ey_BqLlzXL0uZ_7R2bE/view?usp=sharing"> Resume</a>      
           </button>
@@ -90,7 +132,7 @@ function Home() {
             elegant products that speak out their functionalities.
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mt-4 md:mt-12">
-            <button className={`${darkTheme ?  "bg-customGreen text-white" : "bg-yellow-500 text-black " } text-lg sm:text-xl font-[600] py-3 px-6 rounded hover:bg-yellow-600 font-bodys`}>
+            <button className={`${darkTheme ?  "bg-white text-headings font-head" : "bg-yellow-500 text-black " } text-lg sm:text-xl font-[600] py-3 px-6 rounded hover:bg-yellow-600 font-bodys`}>
               Chat with Me
             </button>
           </div>
@@ -121,8 +163,8 @@ function Home() {
 
         {/* Right Section */}
         <div className="flex-1 flex flex-col items-center md:items-end space-y-6 relative md:mt-16 mt-10">
-          <div className={`${darkTheme ? "bg-customGreen":"bg-transparent"} text-black p-4 rounded-lg shadow-lg w-72 sm:w-80 hover:border-yellow-500`}>
-            <h3 className={`font-semibold text-xl ${darkTheme ? "text-black":"text-yellow-500"} font-head`}>
+          <div className={`${darkTheme ? "bg-white":"bg-transparent"} text-black p-4 rounded-lg shadow-lg w-72 sm:w-80 hover:border-yellow-500`}>
+            <h3 className={`font-semibold text-xl ${darkTheme ? "text-headings":"text-yellow-500"} font-head`}>
               Prototyping
             </h3>
             <p className={`text-base ${darkTheme ? "text-gray-900 font-[300]" : "text-gray-200"} pt-2 font-bodys font-[200]`}>
@@ -130,8 +172,8 @@ function Home() {
               concepts to life.
             </p>
           </div>
-          <div className={`${darkTheme ? "bg-customGreen":"bg-transparent"} text-black p-4 rounded-lg shadow-lg w-72 sm:w-80`}>
-            <h3 className={`font-semibold text-xl ${darkTheme ? "text-black":"text-yellow-500"} font-head`}>
+          <div className={`${darkTheme ? "bg-white ":"bg-transparent"} text-black p-4 rounded-lg shadow-lg w-72 sm:w-80`}>
+            <h3 className={`font-semibold text-xl ${darkTheme ? "text-headings":"text-yellow-500"} font-head`}>
               Industrial Design
             </h3>
             <p className={`text-base ${darkTheme ? "text-gray-900 font-[300]" : "text-gray-200"} pt-2 font-bodys font-[200]`}>
@@ -139,8 +181,8 @@ function Home() {
               from electronics to furniture.
             </p>
           </div>
-          <div className={`${darkTheme ? "bg-customGreen":"bg-transparent"} text-black p-4 rounded-lg shadow-lg w-72 sm:w-80`}>
-            <h3 className={`font-semibold text-xl ${darkTheme ? "text-black":"text-yellow-500"} font-head`}>
+          <div className={`${darkTheme ? "bg-white":"bg-transparent"} text-black p-4 rounded-lg shadow-lg w-72 sm:w-80`}>
+            <h3 className={`font-semibold text-xl ${darkTheme ? "text-headings":"text-yellow-500"} font-head`}>
               Design Consulting
             </h3>
             <p className={`text-base ${darkTheme ? "text-gray-800 font-[300]" : "text-gray-200"} pt-2 font-bodys font-[200]`}>
