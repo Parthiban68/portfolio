@@ -42,9 +42,6 @@ export default {
         // secbody:['Satisfy'],
         head:['Bruno Ace SC']
       },
-      animation: {
-        'spin-slow': 'spin 8s linear infinite',
-      },
     },
   },
   plugins: [

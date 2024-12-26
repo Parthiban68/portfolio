@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { title } from "framer-motion/client";
 import { useTheme } from "../ThemeContext/themeApi";
 
 const aboutSections = [

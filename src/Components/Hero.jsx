@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutUs from "./Pages/AboutUs";
@@ -10,6 +10,7 @@ import { useTheme } from "./ThemeContext/themeApi";
 
 function Hero() {
   const { darkTheme } = useTheme();
+
   return (
     <div
       className={`w-full min-h-screen ${
