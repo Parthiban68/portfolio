@@ -2,13 +2,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { projects } from "../../constants";
-
+import {useTheme} from '../ThemeContext/themeApi'
 const Projects = () => {
+
+  const {darkTheme} = useTheme();
+  
   return (
     <>
      
       <motion.h1
-        className="ext-4xl font-extrabold font-head text-white mb-8 z-10"
+        className={`text-4xl font-extrabold font-head ${darkTheme ? 'text-headings' : 'text-white'} mb-8 z-10`}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
@@ -40,7 +43,7 @@ const Projects = () => {
                   : "items-end text-right"
               }`}
             >
-              <img
+              <img 
                 src={project.image}
                 alt={project.title}
                 className={`${
@@ -49,12 +52,12 @@ const Projects = () => {
                     : "w-64 h-80 mt-20 "
                 } object-cover rounded-lg mb-4 border`}
               />
-              <p className="text-white text-base mb-2">{project.category}</p>
-              <h1 className="text-white text-2xl font-bold py-2">
+              <p className={`${darkTheme ? 'text-gray-900' : 'text-white'} text-base font-[600] mb-2`}>{project.category}</p>
+              <h1 className={`${darkTheme ? 'text-headings' : 'text-white'} text-2xl font-bold py-2`}>
                 {project.title}
               </h1>
-              <p className="text-white text-lg mb-4">{project.description}</p>
-              <button className="py-2 px-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-white text-lg">
+              <p className={`${darkTheme ? 'text-gray-700' : 'text-white '} text-lg mb-4`}>{project.description}</p>
+              <button className="py-2 px-4 bg-indigo-500 hover:bg-indigo-700 rounded-lg text-white text-lg">
                 View Project
               </button>
             </div>

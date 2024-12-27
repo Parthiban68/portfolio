@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { certificates } from "../../constants";
-
+import {useTheme} from '../ThemeContext/themeApi'
 const Certificate = () => {
 
+  const {darkTheme} = useTheme();
+  
   const cardAnimation = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -19,10 +21,10 @@ const Certificate = () => {
     <>
   {/* Heading */}
   <motion.h2
-    className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-head text-white mb-8 sm:mb-10 z-10 text-center"
+    className={`${darkTheme ? 'text-headings' : 'text-white'} text-3xl sm:text-4xl md:text-5xl font-extrabold font-head text-white mb-8 sm:mb-10 z-10 text-center`}
     variants={headingAnimation}
     initial="hidden"
-    animate="visible"
+    animate="visible" 
     transition={{ duration: 0.8, type: "spring" }}
   >
     Certifications
@@ -30,7 +32,7 @@ const Certificate = () => {
 
   {/* Certificates Section */}
   <motion.div
-    className="grid grid-cols-1 gap-6  sm:w-4/5 md:w-5/6 lg:w-5/6 z-10"
+    className="grid grid-cols-1 gap-6 sm:w-4/5 md:w-5/6 lg:w-5/6 w-6/6 z-10"
     initial="hidden"
     animate="visible"
     variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
